@@ -18,7 +18,7 @@ function Register()
     {
       event.preventDefault();
 
-      var obj = {"user_name":user_name,"user_mobile":user_name,"user_email":user_email,"user_password":user_password};
+      var obj = {"user_name":user_name,"user_mobile":user_mobile,"user_email":user_email,"user_password":user_password};
       axios.post("https://a2zithub.org/dairy/abi/user_register",obj).then((res) => {
 
         console.log(res.data);
